@@ -1,0 +1,8 @@
+{
+  "item.attackauras.titan_aura": "Titan Aura",
+  "item.attackauras.dev_block": "Dev Block",
+
+  "block.attackauras.dev_block": "Dev Block",
+
+  "itemGroup.attackAurasTab": "Attack Auras"
+}
