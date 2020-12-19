@@ -1,5 +1,6 @@
 package com.reactiongames.attackauras;
 
+import com.reactiongames.attackauras.util.CapabilityHandler;
 import com.reactiongames.attackauras.util.RegistryHandler;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -11,11 +12,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.stream.Collectors;
-
 @Mod(AttackAuras.MOD_ID)
 public class AttackAuras {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public static final String MOD_ID = "attackauras";
 
@@ -29,7 +28,7 @@ public class AttackAuras {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-
+        CapabilityHandler.register();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

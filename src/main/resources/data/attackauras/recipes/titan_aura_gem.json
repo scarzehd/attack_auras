@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "attackauras:titan_aura"
+    },
+    {
+      "item": "attackauras:aura_gem"
+    }
+  ],
+  "result": {
+    "item": "attackauras:titan_aura_gem"
+  }
+}
